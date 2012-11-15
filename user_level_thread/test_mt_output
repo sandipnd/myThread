@@ -1,0 +1,40 @@
+[sannandi@bandicoot my_thread]$ ./example-mt 
+I am thread 1 and I'm printing: Hi
+I am thread 2 and I'm printing: Mom
+I am thread 2 and I'm calling goo
+goo calling foo
+foo called, exiting
+main joined with thread 1
+t3 forked
+I am thread 3 and I'm printing: How are you?
+main back from joinall
+main forked Thread_4 and calling P on s1
+main out of first P call
+main forked thread 5 and calling P again
+main out of second P call
+I'm thread 5 and I'm synching with thread 4
+I'm thread 5 and I'm back from synching with thread 4
+I'm thread 4 and I'm synching with thread 5
+I'm thread 4 and I'm back from synching with thread 5
+main back from joinall, timing
+500 fork/joins starting...done
+500 fork/joins in 0.1371s == 3647.6903 fj/s
+main back from timing
+500 P/V starting...
+done
+5000 P/Vs in 0.0001s == 39053109.8696 pv/s
+main launching sleepers and yielders
+yielder 1 started
+yielder 1 yielding
+thread Y1 killed
+yielder 2 started
+yielder 2 yielding
+yielder 1 started
+yielder 1 yielding
+I'm a sleepy task and I'm sleeping for 3 seconds
+I'm a sleepy task and I'm sleeping for 5 seconds
+yielder 1 ending
+yielder 2 ending
+I'm a sleepy task 3 and I'm awake on time
+main exiting
+
